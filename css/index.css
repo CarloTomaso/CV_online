@@ -1,0 +1,475 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border:0;
+    margin:0;
+   
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: "Lato", sans-serif
+}
+p{
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.up{
+    animation-name: moveInUp;
+    animation-duration: 5s;
+}
+
+.me {
+    display:flex;
+    align-items:center;
+    border-bottom: 2px solid red;
+    margin-bottom: 50px;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    width: 400px;
+    }
+
+.heading{
+    animation-name: moveInRight;
+    animation-duration: 3s;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   width: auto;
+}
+  
+
+li {
+    list-style-type: none;
+    color:white;
+    font-size: 1.1em;
+   
+}
+.my-menu li:hover{
+    border-bottom: 1px solid red;
+  
+}
+
+.menu{
+    display:flex;
+    width: 100%;
+    height:8%;
+    background-color:rgb(0, 0, 0);
+    display: block;
+    position: fixed;
+    z-index: 99999;
+}
+.menu-list{
+    margin:0  30px 0 150px;
+    display:flex;
+    width: 1150px;
+}
+.dati{
+    height: 200px;
+    display: flex;
+  margin-left: 50px;
+    align-content: center;
+    align-items: center;
+}
+.my-dati{
+   margin-left: 15px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+.main-dati{
+    display: block;
+    color:black;
+    height: 30px;
+ }
+
+.item a{
+    color: white;
+    margin-right: 0px;
+}
+active{
+    border-bottom: red;
+}
+
+
+label{
+    color:black;
+    margin-right: 20px;
+}
+.my-menu{
+    display:flex;
+    height:65px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-list li{
+    margin-right: 50px;
+    
+}
+
+.input-search{
+    height: 26px;  
+
+}
+.input-search,textarea:focus{
+    outline: none;
+   
+}
+
+
+.contact{
+   margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+}
+.title-footer{
+    color:white;
+    border-bottom: 1px solid red;
+}
+a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+.myself{
+    
+    width: 150px;
+    height: 160px;
+    border-radius: 10%;
+    box-shadow: 8px 8px 8px black;
+}
+.icon{
+    height: 40px;
+}
+
+#header{
+    background-image: url(../img/gradisca.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2000px 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:900px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 100%;
+}
+.cover{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title{
+    color: white;
+    font-size: 5em;
+   border-bottom: 2px solid red;
+
+}
+.title-section{
+    display: inline;
+    border-bottom: 2px solid red;
+}
+.subtitle{
+    color: white;
+}
+#formazione{
+    background-image: url(../img/wallpaper_header.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2000px 1000px;
+    height:900px;
+  
+}
+
+
+.formazione-container{
+    background-color: rgb(255, 255, 255);
+    padding: 4%;
+    
+   
+}
+.section{
+   
+    background-color: white;
+    padding: 3%;
+    width: 100%;
+   
+}
+.article{
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 30px;
+    width: 50%;
+  box-shadow: 1px 1px 1px 1px rgb(235, 235, 235);
+}
+
+
+
+
+.img-formazione img{
+    width: 400px;
+    margin: 50px 0 0 50px;;
+}
+
+.section-formazione1{
+    display: flex;
+   
+}
+.information{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  
+  
+}
+
+#professioni{
+    background-image: url(../img/professioni.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2000px 1000px;
+    height:900px;
+}
+.professioni-cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:700px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#professioni-container{
+    background-color: rgb(250, 250, 250);
+    padding: 50px;
+
+}
+.professione-singola{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid gray ;
+   
+}
+.professione-singola:nth-child(even){
+    flex-direction: row-reverse;
+   
+}
+.logo-esperienza:nth-child(even){
+    margin-right: 120px;
+    width: 260px;
+    height: 200px;
+}
+.esperienza p{
+  margin-top: 10px;
+}
+.logo-esperienza{
+    height:170px;
+    margin-left: 120px;
+}
+
+#skill{
+    background-image: url(../img/skill.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2000px 1000px;
+    height:900px;
+}
+.skills-container{
+    background-color: rgb(255, 255, 255);
+}
+.img-skills1{
+    display: flex;
+    justify-content: center;
+}
+.img-skills1 img{
+    margin-top: 50px;
+    width: 250px;
+}
+.img-skills2{
+    display: flex;
+    justify-content: center;
+}
+.img-skills2 img{
+    margin: 100px 50px 50px 50px;
+    width: 200px;
+    height: 250px;
+}
+.img-skills3{
+    display: flex;
+    justify-content: center;
+}.img-skills3 img{
+    margin: 100px 50px 50px 50px;
+    width: 400px;
+}
+.img-formazione2{
+    margin-top: 50px;
+display: flex;
+justify-content: center;
+}
+.img-formazione2>img{
+    margin-right: 200px;
+}
+#css{
+    margin-right: 0;
+}
+
+@keyframes moveInLeft {
+    0%{
+opacity: 0;
+transform: translateX(-100px)
+    }
+    80%{
+
+    }
+    100%{
+opacity: 1;
+transform: translate(0)
+    }
+}
+
+@keyframes moveInRight {
+    0%{
+opacity: 0;
+transform: translateX(100px)
+    }
+    80%{
+
+    }
+    100%{
+opacity: 1;
+transform: translate(0)
+    }
+}
+
+@keyframes moveInUp {
+    0%{
+opacity: 0;
+transform: translateY(100px)
+    }
+    80%{
+
+    }
+    100%{
+opacity: 1;
+transform: translate(0)
+    }
+}
+
+
+
+
+
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .myImg:hover {
+      opacity: 0.3;
+    }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1050px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 70px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
