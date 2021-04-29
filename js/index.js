@@ -94,22 +94,20 @@ for (esperienza of esperienzeLavorative) {
 }
 
 
-const currentLocation = location.href;
-console.log(currentLocation);
 
-const menuItem = document.querySelectorAll('a');
-console.log(menuItem);
-const checkMenuItem = () => {
-    const menuLenght = menuItem.lenght;
-    for (i = 0; i < menuLenght; i++) {
-        console.log(menuItem[i].getAttribute('href'));
-        menuItem[i].href === currentLocation;
-        if (menuItem[i].href === currentLocation) {
-            menuItem[i].classList.add = 'active'
-        }
-    }
-}
-checkMenuItem();
+
+
+const ul = document.querySelector('ul');
+const li = document.getElementsByClassName('item')
+const arrayLi = Array.from(li)
+const arrayUl = Array.from(ul)
+console.log(arrayUl)
+arrayLi.forEach(el => {
+    el.addEventListener('click', function () {
+        ul.querySelector('.active').classList.remove('active');
+        el.classList.add('active')
+    })
+})
 
 
 
