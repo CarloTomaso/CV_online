@@ -27,14 +27,7 @@ fetch('../text/sudime.json')
     }).then(function (json) {
         p.innerHTML = json.introduzione.join("")
     })
-p2 = document.getElementById('sudime2')
 
-fetch('../text/sudime.json')
-    .then(function (response) {
-        return response.json();
-    }).then(function (json) {
-        p2.innerHTML = json.introduzione2.join("")
-    })
 
 // recupero le informazioni sul documento txt
 formazioneText = document.getElementById('formazione-text');
@@ -101,18 +94,23 @@ for (esperienza of esperienzeLavorative) {
 }
 
 
-/* const currentLocation = location.href;
+const currentLocation = location.href;
 console.log(currentLocation);
 
-const menuItem = document.getElementsByClassName('item');
+const menuItem = document.querySelectorAll('a');
 console.log(menuItem);
-
-const menuLenght = menuItem.lenght;
-for (i = 0; i < menuLenght; i++) {
-    if (menuItem[i].href === currentLocation) {
-        menuItem[i].className = 'active'
+const checkMenuItem = () => {
+    const menuLenght = menuItem.lenght;
+    for (i = 0; i < menuLenght; i++) {
+        console.log(menuItem[i].getAttribute('href'));
+        menuItem[i].href === currentLocation;
+        if (menuItem[i].href === currentLocation) {
+            menuItem[i].classList.add = 'active'
+        }
     }
-} */
+}
+checkMenuItem();
+
 
 
 // Get the modal
@@ -132,7 +130,7 @@ for (photo of img) {
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-console.log(span)
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
     modal.style.display = "none";

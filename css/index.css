@@ -92,8 +92,8 @@ li {
     margin-right: 0px;
 }
 
-active{
-    border-bottom: red;
+.active{
+    text-decoration: underline;
 }
 
 /*
@@ -489,7 +489,9 @@ transform: translate(0)
 
 
 
-
+#sudime{
+    white-space: pre-wrap;
+}
 
 
 
