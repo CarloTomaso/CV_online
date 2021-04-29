@@ -184,7 +184,10 @@ li {
     width: 50%;
   box-shadow: 1px 1px 1px 1px rgb(235, 235, 235);
 }
-
+#sudime{
+    line-height: 1.7em;
+    white-space: pre-wrap;
+}
 /*
 layout #formazione
 */
@@ -233,6 +236,10 @@ justify-content: center;
 
 #css{
     margin-right: 0;
+}
+#formazione-text{
+    line-height: 1.7em;
+    white-space: pre-wrap;
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -489,9 +496,7 @@ transform: translate(0)
 
 
 
-#sudime{
-    white-space: pre-wrap;
-}
+
 
 
 

@@ -19,7 +19,7 @@ window.onscroll = function () {
 
 //recupero il testo 'su di me' dal file json
 p = document.getElementById('sudime')
-
+pFormazione = document.getElementById('formazione-text')
 
 fetch('../text/sudime.json')
     .then(function (response) {
@@ -29,14 +29,12 @@ fetch('../text/sudime.json')
     })
 
 
-// recupero le informazioni sul documento txt
-formazioneText = document.getElementById('formazione-text');
 
-fetch('../text/formazione.txt')
+fetch('../text/sudime.json')
     .then(function (response) {
-        return response.text();
-    }).then(function (data) {
-        formazioneText.innerHTML = data;
+        return response.json();
+    }).then(function (json) {
+        pFormazione.innerHTML = json.introduzione2.join("");
     })
 
 
@@ -95,7 +93,9 @@ for (esperienza of esperienzeLavorative) {
 
 
 
-
+/*
+attribuisco la classe .active al menu
+*/
 
 const ul = document.querySelector('ul');
 const li = document.getElementsByClassName('item')
