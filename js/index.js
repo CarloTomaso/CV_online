@@ -100,8 +100,8 @@ for (esperienza of esperienzeLavorative) {
 const ul = document.querySelector('ul');
 const li = document.getElementsByClassName('item')
 const arrayLi = Array.from(li)
-const arrayUl = Array.from(ul)
-console.log(arrayUl)
+
+
 arrayLi.forEach(el => {
     el.addEventListener('click', function () {
         ul.querySelector('.active').classList.remove('active');

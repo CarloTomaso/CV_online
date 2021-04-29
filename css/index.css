@@ -100,7 +100,7 @@ li {
  layout intestazione pagina e zona #home"
  */
 
- #header{
+ .header{
     background-image: url(../img/gradisca.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
