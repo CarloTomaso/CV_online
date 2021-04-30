@@ -52,7 +52,7 @@ class Professione {
     professioneSingola = () => {
         return `
   
-      <div class='article' >
+      <div class='article-professioni' >
         <h1> ${this.azienda} </h1>
         <h3> ${this.mansione} </h3>
         <h3> ${this.annoInizio}  ${this.annoFine}</h3>
@@ -133,7 +133,6 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
     modal.style.display = "none";
 }
-
 
 
 

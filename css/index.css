@@ -158,7 +158,7 @@ li {
 .dati{
     height: 200px;
     display: flex;
-  margin-left: 50px;
+    margin-left: 50px;
     align-content: center;
     align-items: center;
 }
@@ -236,6 +236,16 @@ justify-content: center;
 
 #css{
     margin-right: 0;
+}
+
+
+.article-formazione{
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 30px;
+    width: 50%;
+  box-shadow: 1px 1px 1px 1px rgb(235, 235, 235);
 }
 #formazione-text{
     line-height: 1.7em;
@@ -366,6 +376,14 @@ layout #professioni
     margin-right: 120px;
     width: 260px;
     height: 200px;
+}
+.article-professioni{
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 30px;
+    width: 50%;
+  box-shadow: 1px 1px 1px 1px rgb(235, 235, 235);
 }
 .esperienza p{
   margin-top: 10px;

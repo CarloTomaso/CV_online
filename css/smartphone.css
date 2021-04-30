@@ -1,0 +1,158 @@
+@media (max-width: 700px) { 
+    .menu{
+        height: 60px;
+        display: block;
+    position: fixed;
+    z-index: 99999;
+    }
+    .menu-list{
+        margin:0  30px 0 10px;
+        display:flex;
+        width: 100px;
+    }
+    li {
+        list-style-type: none;
+        color:white;
+        font-size: 0.8em;
+       
+    }
+    /* #home per smartphone */
+.header{
+    background-position: top;
+    background-size: 670px 500px;
+    height:500px;
+}
+h2{
+    width: 300px;
+}
+.title{
+    font-size: 1.6em;
+}
+.subtitle{
+    font-size: 1em;
+}
+.title-section{
+    font-size:1.3em;
+}
+.me{
+width: 90%;
+}
+.dati{
+    margin-left: 20px;
+}
+.my-dati{
+    margin-left: 5px;
+}
+.main-dati{
+  height: 30px;
+  font-size: 0.8em;
+ }
+ .article{
+     width: 350px;
+     margin:0;
+     padding: 0px;
+     height: 550px;
+ }
+ #sudime{
+    height: 250px;
+  font-size: 0.8em;
+    padding: 2%;
+}
+
+/* #formazione per smartphone*/
+
+#formazione{
+    background-attachment: scroll;
+    background-position: center;
+    background-size: 500px 700px;
+    height:500px;
+}
+#formazione h1{
+    font-size: 2em;
+    color: white;
+}
+.cover{
+    height: 500px;
+}
+.section-formazione1{
+ flex-direction: column;
+
+}
+.article-formazione{
+    width: 350px;
+    margin:0;
+    padding: 0px;
+    height: 330px;
+}
+.title-section{
+    border-bottom: 1px solid red;
+   margin-bottom: 10px;
+   display: block;
+   width: 110px;
+}
+#formazione-text{
+    height: 250px;
+    font-size: 0.8em;
+      padding: 2%;
+}
+.img-formazione2{
+    flex-direction: column;
+    margin-left: 13%;
+}
+.myImg{
+    margin-bottom: 20%;
+}
+/*
+modal
+*/
+.modal{
+    margin-top: 50%;
+    width: 100%; /* Full width */
+    height: 60%; /* Full height */
+}
+
+/* #professioni x smartphone */
+#professioni{
+    background-attachment: scroll;
+    background-position: center;
+    background-size: 500px 700px;
+    height:500px;
+}
+#professioni-container{
+    padding:5%;
+}
+.professione-singola{
+    flex-direction: column;
+}
+.professione-singola:nth-child(even){
+    flex-direction: column;
+   
+}
+.article-professioni{
+    width: 350px;
+    margin:0;
+    padding: 0px;
+    height: 330px;
+    margin-bottom: 10%;
+}
+/* skills */
+
+#skill{
+    background-attachment: scroll;
+    background-position: center;
+    background-size: 500px 700px;
+    height:500px;
+}
+.img-skills2{
+    flex-direction: column;
+    margin-left: 10%;
+}
+.img-skills3{
+    flex-direction: column;
+   
+}
+.img-skills3 img{
+    width: 75%;
+    margin-right: 10%;
+}
+ }
